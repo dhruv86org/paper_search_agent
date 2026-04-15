@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/kaniko-project/executor:latest'
+    args:
+      - --destination=us-central1-docker.pkg.dev/cloudrun-mcp-agent/paper-search/agent:latest
+      - --context=.
+      - --dockerfile=Dockerfile
+
+images:
+  - 'us-central1-docker.pkg.dev/cloudrun-mcp-agent/paper-search/agent:latest'
